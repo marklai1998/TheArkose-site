@@ -3,7 +3,7 @@
 import React, { PureComponent } from 'react'
 import { Nav } from './Nav'
 import Logo from './logo.svg'
-import main from './main.png'
+import background from './main.png'
 import './style.css'
 
 type State = {
@@ -29,7 +29,7 @@ export class Header extends PureComponent<{}, State> {
     const header = document.getElementById('header')
     const headerHeight = header ? header.clientHeight : 0
     const opacity = (100 - ((headerHeight - 100) / headerHeight) * 100) / 100
-    const scrollHeight = window.pageYOffset || (document.documentElement ? document.documentElement.scrollTop : undefined) || (document.body ? document.body.scrollTop : undefined) || 0
+    const scrollHeight = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
     this.setState({
       opacity,
       scrollHeight,
@@ -40,7 +40,7 @@ export class Header extends PureComponent<{}, State> {
   render() {
     return (
       <header id='header'
-        style={{ height: `calc( 100vh - ${this.state.scrollHeight}px)`, backgroundImage: `url(${main})` }}>
+        style={{ height: `calc( 100vh - ${this.state.scrollHeight}px)`, backgroundImage: `url(${background})` }}>
         <div className='header-overlay' style={{
           height: `calc( 100vh - ${this.state.scrollHeight}px)`,
           background: `rgba(34, 34, 34, ${this.state.opacity})`

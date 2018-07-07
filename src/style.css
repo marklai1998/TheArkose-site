@@ -1,32 +1,43 @@
 body {
-    font-family: 'Rajdhani', Microsoft JhengHei, sans-serif;
+  font-family: 'Rajdhani', Microsoft JhengHei, sans-serif;
+  width: 100%;
+}
+
+#root {
+  width: 100%;
 }
 
 a {
-    color: #222222;
-    text-decoration: none;
-    transition: all 0.5s;
+  color: #222222;
+  text-decoration: none;
+  transition: all 0.5s;
 }
 
 a:hover {
-    color: #bdbdbd;
-    text-decoration: none;
+  color: #bdbdbd;
+  text-decoration: none;
 }
 
 div {
-    transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 img {
-    transition: all 0.5s;
+  transition: all 0.5s;
 }
 
-.server, .about, .services, .contact {
-    padding: 70px 0;
+.server,
+.about,
+.services,
+.contact {
+  padding: 70px 0;
 }
 
 @media only screen and (max-width: 768px) {
-    .server, .about, .services, .contact {
-        text-align: center;
-    }
+  .server,
+  .about,
+  .services,
+  .contact {
+    text-align: center;
+  }
 }

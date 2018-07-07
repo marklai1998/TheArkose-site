@@ -22,19 +22,10 @@ export class Contact extends React.PureComponent<{}> {
       easing: 'ease',
       reset: true
     }
-    const configChest = {
-      origin: 'right',
-      duration: 1000,
-      delay: 150,
-      distance: '300px',
-      opacity: 0,
-      easing: 'ease',
-      reset: true
-    }
     ScrollReveal().reveal(this.refs.contacttitle, config)
     ScrollReveal().reveal(this.refs.contactparagraph, config)
     ScrollReveal().reveal('.contact-list', config)
-    ScrollReveal().reveal('.chest', configChest)
+    ScrollReveal().reveal('.chest', config)
   }
 
   render() {
