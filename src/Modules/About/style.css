@@ -1,0 +1,19 @@
+.about {
+  margin-top: 100vh;
+  border-bottom: #EEE8BE 10px solid;
+  z-index: 10;
+}
+
+.player {
+  width: 100%;
+  -webkit-filter: drop-shadow(-30px 10px 0px rgba(194, 207, 91, 0.7));
+  filter: drop-shadow(-30px 0px 0px rgba(194, 207, 91, 0.7));
+}
+
+.find_out_what_we_host a {
+  color: #fff;
+}
+
+.find_out_what_we_host:hover {
+  color: #ededed;
+}
