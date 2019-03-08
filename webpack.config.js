@@ -6,7 +6,7 @@ module.exports = env => ({
   entry: './src/index.js',
   mode: Object.keys(env)[0],
   output: {
-    filename: 'main.js',
+    filename: '[hash].js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/'
   },
