@@ -1,16 +1,19 @@
 const path = require('path')
 
-module.exports = {
+module.exports = env => ({
   entry: './src/index.js',
-  mode: 'production',
+  mode: Object.keys(env)[0],
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/'
   },
   devServer: {
+    host: 'dev.thearkose.com',
+    historyApiFallback: true,
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
-    port: 9000
+    port: 5000
   },
   module: {
     rules: [
@@ -20,28 +23,28 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            'plugins': [
+            plugins: [
               'transform-class-properties',
               'react-css-modules',
               'transform-object-rest-spread'
             ],
-            'presets': [
-              'react',
-              'env',
-              'flow'
-            ]
+            presets: ['react', 'env', 'flow']
           }
         }
-      },{
+      },
+      {
         test: /\.(png|jpg|gif|svg)$/,
         use: ['file-loader']
-      },{
+      },
+      {
         test: /\.css$/,
         loaders: [
           { loader: 'style-loader' },
-          { loader: 'css-loader' }
+          {
+            loader: 'css-loader'
+          }
         ]
-    }
+      }
     ]
-  },
-}
+  }
+})
