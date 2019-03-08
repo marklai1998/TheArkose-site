@@ -7,27 +7,16 @@ import ReactCSSTransistionGroup from 'react-addons-css-transition-group'
 import { Container } from '../_share/Container'
 import { Title } from '../_share/Title'
 
-import minecraft from './minecraft.png'
-import pixark from './pixark.png'
-import ark from './ark.png'
-import conanExiles from './conanExiles.png'
 import './style.css'
+import { allServices } from './servicesMap'
 
 type State = {
   displayItems: Array<Array<string>>,
 }
 
-const allItems = [
-  ['mc', minecraft, '火柴人小品休閒伺服器'],
-  ['mc', minecraft, 'HK Survival Server'],
-  ['steam', pixark, 'PixARK'],
-  ['steam', ark, 'ARK'],
-  ['steam', conanExiles, 'Conan Exiles']
-]
-
 export class Services extends React.PureComponent<{}, State> {
   state = {
-    displayItems: allItems
+    displayItems: allServices
   }
 
   componentDidMount () {
@@ -55,9 +44,9 @@ export class Services extends React.PureComponent<{}, State> {
 
   change_items = (cate: string) => () => {
     if (cate === 'all') {
-      this.setState({ displayItems: allItems.slice() })
+      this.setState({ displayItems: allServices.slice() })
     } else {
-      const displayItems = allItems.reduce(
+      const displayItems = allServices.reduce(
         (acc, item) => (item[0] === cate ? [...acc, item] : acc),
         []
       )
