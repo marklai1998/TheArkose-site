@@ -8,7 +8,6 @@ export const allServices = [
   ['mc', minecraft, 'HK Survival Server'],
   ['mc', minecraft, 'Project Thearkose 1.12'],
   ['mc', minecraft, 'Project Thearkose 1.13'],
-  ['mc', minecraft, 'HK Survival Server'],
   ['steam', pixark, 'PixARK'],
   ['steam', ark, 'ARK'],
   ['steam', conanExiles, 'Conan Exiles']
