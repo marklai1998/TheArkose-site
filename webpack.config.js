@@ -19,16 +19,21 @@ module.exports = env => ({
     rules: [
       {
         test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
             plugins: [
-              'transform-class-properties',
-              'react-css-modules',
-              'transform-object-rest-spread'
+              '@babel/plugin-syntax-dynamic-import',
+              '@babel/plugin-proposal-class-properties',
+              '@babel/plugin-proposal-object-rest-spread',
+              'react-css-modules'
             ],
-            presets: ['react', 'env', 'flow']
+            presets: [
+              '@babel/preset-react',
+              '@babel/preset-flow',
+              '@babel/env'
+            ]
           }
         }
       },
