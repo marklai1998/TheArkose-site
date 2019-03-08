@@ -11,7 +11,7 @@ import player from './player.png'
 import './style.css'
 
 export class About extends PureComponent<{}> {
-  componentDidMount() {
+  componentDidMount () {
     const config = {
       origin: 'top',
       duration: 1000,
@@ -31,12 +31,11 @@ export class About extends PureComponent<{}> {
       reset: true
     }
     ScrollReveal().reveal('.player', config_player)
-    ScrollReveal().reveal(this.refs.abouttitle, config)
     ScrollReveal().reveal(this.refs.aboutparagrph, config)
     ScrollReveal().reveal('.find_out_what_we_host', config)
   }
 
-  render() {
+  render () {
     return (
       <ScrollableAnchor id={'About'}>
         <Container className='about'>
@@ -46,14 +45,29 @@ export class About extends PureComponent<{}> {
                 <img src={player} className='player' alt='player' />
               </div>
               <div className='col-10 col-sm-12 col-md-8 col-lg-6 col-xl-5'>
-                <Title ref='abouttitle' text={'About Us'} /><br />
+                <Title text={'About Us'} />
+                <br />
                 <div ref='aboutparagrph'>
-                  <b>The Arkose Network</b> is a tiny group established since 2018<br />
-                  Run by <a href='https://www.youtube.com/user/mark1395711'>MrMatches</a> and couple
-                  of partners<br />
-                  We aim to provide a stable hosting services platform for our users<br /><br /><br /><br />
+                  <b>The Arkose Network</b> is a tiny group established since
+                  2018
+                  <br />
+                  Run by{' '}
+                  <a href='https://www.youtube.com/user/mark1395711'>
+                    MrMatches
+                  </a>{' '}
+                  and couple of partners
+                  <br />
+                  We aim to provide a stable hosting services platform for our
+                  users
+                  <br />
+                  <br />
+                  <br />
+                  <br />
                 </div>
-                <Button hyperLink='#Services' text='Find out what we are hosting' />
+                <Button
+                  hyperLink='#Services'
+                  text='Find out what we are hosting'
+                />
               </div>
             </div>
           </div>

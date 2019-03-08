@@ -13,7 +13,7 @@ import ram from './ram.svg'
 import './style.css'
 
 export class Server extends PureComponent<{}> {
-  componentDidMount() {
+  componentDidMount () {
     const config = {
       duration: 1000,
       delay: 150,
@@ -39,18 +39,17 @@ export class Server extends PureComponent<{}> {
       easing: 'ease',
       reset: true
     }
-    ScrollReveal().reveal(this.refs.servertitle, config)
     ScrollReveal().reveal('.server_img', config_server)
     ScrollReveal().reveal('.component', config_component)
   }
 
-  render() {
+  render () {
     return (
       <ScrollableAnchor id={'Server'}>
         <Container backgroundImg={background} className='server'>
           <div className='row'>
             <div className='col-12'>
-              <Title ref='servertitle' text='Meet our server' />
+              <Title text='Meet our server' />
               <img src={serverImg} className='server_img' alt='server' />
             </div>
           </div>
