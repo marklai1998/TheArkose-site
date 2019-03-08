@@ -57,7 +57,7 @@ export class Server extends PureComponent<{}> {
             <div className='col-12 col-sm-6'>
               <div className='component'>
                 <img src={processor} alt='processor' />
-                <a>E5 1650 v2</a>
+                <a>E5 2690 v2</a>
               </div>
             </div>
             <div className='col-12 col-sm-6'>
