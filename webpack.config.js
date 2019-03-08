@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = env => ({
-  entry: './src/index.js',
+  entry: ['@babel/polyfill', './src/index.js'],
   mode: Object.keys(env)[0],
   output: {
     filename: '[hash].js',
@@ -36,6 +36,7 @@ module.exports = env => ({
               '@babel/plugin-syntax-dynamic-import',
               '@babel/plugin-proposal-class-properties',
               '@babel/plugin-proposal-object-rest-spread',
+              '@babel/plugin-transform-runtime',
               'react-css-modules'
             ],
             presets: [

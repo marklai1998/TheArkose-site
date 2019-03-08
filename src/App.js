@@ -3,6 +3,7 @@
 import React, { PureComponent } from 'react'
 import { configureAnchors } from 'react-scrollable-anchor'
 import { Helmet } from 'react-helmet'
+import '@babel/polyfill'
 
 import favicon from './assets/favicon.ico'
 import { Header } from './Modules/Header'
