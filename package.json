@@ -10,12 +10,12 @@
   "author": "MrMatches",
   "license": "MIT",
   "dependencies": {
-    "react": "^16.4.1",
+    "react": "^16.8.4",
     "react-addons-css-transition-group": "^15.6.2",
-    "react-dom": "^16.4.1",
-    "react-scripts": "^1.1.4",
+    "react-dom": "^16.8.4",
+    "react-scripts": "^2.1.8",
     "react-scrollable-anchor": "^0.6.1",
-    "scrollreveal": "^4.0.0-beta.32"
+    "scrollreveal": "^4.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
