@@ -1,4 +1,6 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = env => ({
   entry: './src/index.js',
@@ -15,6 +17,13 @@ module.exports = env => ({
     compress: true,
     port: 5000
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'src/index.html',
+      filename: 'index.html'
+    }),
+    new CleanWebpackPlugin()
+  ],
   module: {
     rules: [
       {
@@ -38,7 +47,7 @@ module.exports = env => ({
         }
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(png|jpg|gif|svg|ico)$/,
         use: ['file-loader']
       },
       {

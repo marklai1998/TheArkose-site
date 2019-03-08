@@ -2,7 +2,9 @@
 
 import React, { PureComponent } from 'react'
 import { configureAnchors } from 'react-scrollable-anchor'
+import { Helmet } from 'react-helmet'
 
+import favicon from './assets/favicon.ico'
 import { Header } from './Modules/Header'
 import { About } from './Modules/About'
 import { Server } from './Modules/Server'
@@ -15,6 +17,9 @@ export const App = () => {
   configureAnchors({ offset: -100 })
   return (
     <React.Fragment>
+      <Helmet>
+        <link rel='shortcut icon' href={favicon} />
+      </Helmet>
       <Header />
       <About />
       <Server />
@@ -24,4 +29,3 @@ export const App = () => {
     </React.Fragment>
   )
 }
-
