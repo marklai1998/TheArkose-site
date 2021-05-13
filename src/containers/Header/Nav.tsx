@@ -35,12 +35,7 @@ export const Nav = () => {
               </Scrollchor>
             </li>
             <li>
-              <Scrollchor
-                to='https://map.thearkose.com'
-                animate={{ offset: -100 }}
-              >
-                Online Map
-              </Scrollchor>
+              <a href='https://map.thearkose.com'>Online Map</a>
             </li>
           </Menu>
         </div>
