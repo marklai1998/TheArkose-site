@@ -6,7 +6,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
-    "react-scrollchor": "^6.0.0",
+    "react-scrollchor": "^7.0.0",
     "react-use": "^17.2.4",
     "scrollreveal": "^4.0.9",
     "styled-components": "^5.3.0",
@@ -38,9 +38,9 @@
     ]
   },
   "devDependencies": {
-    "@types/node": "^15.0.2",
-    "@types/react": "^17.0.5",
-    "@types/react-dom": "^17.0.4",
+    "@types/node": "^15.6.1",
+    "@types/react": "^17.0.6",
+    "@types/react-dom": "^17.0.5",
     "@types/scrollreveal": "^0.0.6",
     "@types/styled-components": "^5.1.9",
     "precompress": "^6.3.2",

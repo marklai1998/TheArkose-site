@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import Scrollchor from 'react-scrollchor'
+import { Scrollchor } from 'react-scrollchor'
 
 export const Nav = () => {
   const [showMobileNav, setShowMobileNav] = useState(false)
