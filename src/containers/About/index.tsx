@@ -20,7 +20,6 @@ export const About = () => {
       distance: '300px',
       opacity: 0,
       easing: 'ease',
-      reset: true,
     })
   }, [playerRef])
 
@@ -33,7 +32,6 @@ export const About = () => {
       distance: '300px',
       opacity: 0,
       easing: 'ease',
-      reset: true,
     })
   }, [aboutParagraphRef])
 

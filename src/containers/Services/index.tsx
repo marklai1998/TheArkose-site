@@ -20,7 +20,6 @@ export const Services = () => {
       distance: '300px',
       opacity: 0,
       easing: 'ease',
-      reset: true,
     })
   }, [selectorRef])
 
@@ -33,7 +32,6 @@ export const Services = () => {
       distance: '0',
       opacity: 0,
       easing: 'ease',
-      reset: true,
     })
   }, [listRef])
 

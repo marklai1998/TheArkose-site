@@ -22,7 +22,6 @@ export const Server = () => {
       distance: '200px',
       opacity: 0,
       easing: 'ease',
-      reset: true,
     })
   }, [cpuRef])
 
@@ -34,7 +33,6 @@ export const Server = () => {
       distance: '200px',
       opacity: 0,
       easing: 'ease',
-      reset: true,
     })
   }, [ramRef])
 
@@ -47,7 +45,6 @@ export const Server = () => {
       distance: '0',
       opacity: 0,
       easing: 'ease',
-      reset: true,
     })
   }, [serverImageRef])
 

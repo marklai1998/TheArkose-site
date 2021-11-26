@@ -15,7 +15,6 @@ const config = {
   distance: '300px',
   opacity: 0,
   easing: 'ease',
-  reset: true,
 }
 export const Contact = () => {
   const contactParagraphRef = useRef<HTMLElement>(null)
