@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { Scrollchor } from 'react-scrollchor'
+import { Link } from 'react-router-dom'
 
 export const Nav = () => {
   const [showMobileNav, setShowMobileNav] = useState(false)
@@ -35,7 +36,7 @@ export const Nav = () => {
               </Scrollchor>
             </li>
             <li>
-              <a href='https://map.thearkose.com'>Online Map</a>
+              <Link to='/map'>Online Map</Link>
             </li>
           </Menu>
         </div>

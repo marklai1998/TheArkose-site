@@ -1,21 +1,11 @@
 import React from 'react'
 import { createGlobalStyle } from 'styled-components'
-import { Header } from './containers/Header'
-import { About } from './containers/About'
-import { Server } from './containers/Server'
-import { Services } from './containers/Services'
-import { Contact } from './containers/Contact'
-import { Footer } from './containers/Footer'
+import { Router } from './Router'
 
 export const App = () => (
   <>
     <GlobalStyle />
-    <Header />
-    <About />
-    <Server />
-    <Services />
-    <Contact />
-    <Footer />
+    <Router />
   </>
 )
 
@@ -23,10 +13,17 @@ const GlobalStyle = createGlobalStyle`
 body {
   font-family: 'Rajdhani', Microsoft JhengHei, sans-serif;
   width: 100%;
+  height: 100%;
+}
+
+html {
+  width: 100%;
+  height: 100%;
 }
 
 #app {
   width: 100%;
+  height: 100%;
 }
 
 a {
