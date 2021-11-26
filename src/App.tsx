@@ -25,7 +25,7 @@ body {
   width: 100%;
 }
 
-#root {
+#app {
   width: 100%;
 }
 
