@@ -1,39 +1,29 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react'
-import ScrollReveal from 'scrollreveal'
+import React, { useMemo, useState } from 'react'
 
 import { allServices, servicesType } from './servicesMap'
 import { Section } from '../../components/Section'
 import { Title } from '../../components/Title'
 import styled from 'styled-components'
+import { useReveal } from '../../hooks/useReveal'
 
 export const Services = () => {
-  const selectorRef = useRef<HTMLDivElement>(null)
-  const listRef = useRef<HTMLUListElement>(null)
+  const [selectorRef] = useReveal<HTMLDivElement>({
+    origin: 'left',
+    duration: 1000,
+    delay: 150,
+    distance: '300px',
+    opacity: 0,
+    easing: 'ease',
+  })
+  const [listRef] = useReveal<HTMLUListElement>({
+    origin: 'left',
+    duration: 1000,
+    delay: 150,
+    distance: '0',
+    opacity: 0,
+    easing: 'ease',
+  })
   const [type, setType] = useState(servicesType.MC)
-
-  useEffect(() => {
-    if (!selectorRef.current) return
-    ScrollReveal().reveal(selectorRef.current, {
-      origin: 'left',
-      duration: 1000,
-      delay: 150,
-      distance: '300px',
-      opacity: 0,
-      easing: 'ease',
-    })
-  }, [selectorRef])
-
-  useEffect(() => {
-    if (!listRef.current) return
-    ScrollReveal().reveal(listRef.current, {
-      origin: 'left',
-      duration: 1000,
-      delay: 150,
-      distance: '0',
-      opacity: 0,
-      easing: 'ease',
-    })
-  }, [listRef])
 
   const items = useMemo(
     () =>

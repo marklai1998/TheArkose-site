@@ -1,5 +1,4 @@
-import React, { useEffect, useRef } from 'react'
-import ScrollReveal from 'scrollreveal'
+import React from 'react'
 
 import background from '../../assets/serverBackground.png'
 import serverImg from '../../assets/server.svg'
@@ -8,45 +7,31 @@ import ram from '../../assets/ram.svg'
 import { Section } from '../../components/Section'
 import { Title } from '../../components/Title'
 import styled from 'styled-components'
+import { useReveal } from '../../hooks/useReveal'
 
 export const Server = () => {
-  const serverImageRef = useRef<HTMLImageElement>(null)
-  const cpuRef = useRef<HTMLDivElement>(null)
-  const ramRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    if (!cpuRef.current) return
-    ScrollReveal().reveal(cpuRef.current, {
-      duration: 700,
-      delay: 150,
-      distance: '200px',
-      opacity: 0,
-      easing: 'ease',
-    })
-  }, [cpuRef])
-
-  useEffect(() => {
-    if (!ramRef.current) return
-    ScrollReveal().reveal(ramRef.current, {
-      duration: 700,
-      delay: 150,
-      distance: '200px',
-      opacity: 0,
-      easing: 'ease',
-    })
-  }, [ramRef])
-
-  useEffect(() => {
-    if (!serverImageRef.current) return
-    ScrollReveal().reveal(serverImageRef.current, {
-      duration: 1000,
-      delay: 150,
-      scale: 0.9,
-      distance: '0',
-      opacity: 0,
-      easing: 'ease',
-    })
-  }, [serverImageRef])
+  const [serverImageRef] = useReveal<HTMLImageElement>({
+    duration: 1000,
+    delay: 150,
+    scale: 0.9,
+    distance: '0',
+    opacity: 0,
+    easing: 'ease',
+  })
+  const [cpuRef] = useReveal<HTMLDivElement>({
+    duration: 700,
+    delay: 150,
+    distance: '200px',
+    opacity: 0,
+    easing: 'ease',
+  })
+  const [ramRef] = useReveal<HTMLDivElement>({
+    duration: 700,
+    delay: 150,
+    distance: '200px',
+    opacity: 0,
+    easing: 'ease',
+  })
 
   return (
     <div id='Server'>

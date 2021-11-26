@@ -1,5 +1,4 @@
-import React, { useEffect, useRef } from 'react'
-import ScrollReveal from 'scrollreveal'
+import React from 'react'
 
 import background from '../../assets/contactBackground.png'
 import chest from '../../assets/chest.png'
@@ -7,6 +6,7 @@ import { Section } from '../../components/Section'
 import { Title } from '../../components/Title'
 import { Button } from '../../components/Button'
 import styled from 'styled-components'
+import { useReveal } from '../../hooks/useReveal'
 
 const config = {
   origin: 'left',
@@ -16,25 +16,11 @@ const config = {
   opacity: 0,
   easing: 'ease',
 }
+
 export const Contact = () => {
-  const contactParagraphRef = useRef<HTMLElement>(null)
-  const contactListRef = useRef<HTMLUListElement>(null)
-  const chestRef = useRef<HTMLImageElement>(null)
-
-  useEffect(() => {
-    if (!contactParagraphRef.current) return
-    ScrollReveal().reveal(contactParagraphRef.current, config)
-  }, [contactParagraphRef])
-
-  useEffect(() => {
-    if (!contactListRef.current) return
-    ScrollReveal().reveal(contactListRef.current, config)
-  }, [contactListRef])
-
-  useEffect(() => {
-    if (!chestRef.current) return
-    ScrollReveal().reveal(chestRef.current, config)
-  }, [chestRef])
+  const [contactParagraphRef] = useReveal<HTMLElement>(config)
+  const [contactListRef] = useReveal<HTMLUListElement>(config)
+  const [chestRef] = useReveal<HTMLImageElement>(config)
 
   return (
     <div id='Contact'>

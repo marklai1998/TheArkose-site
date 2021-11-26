@@ -1,39 +1,29 @@
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { Button } from '../../components/Button'
 import { Section } from '../../components/Section'
 import { Title } from '../../components/Title'
-import ScrollReveal from 'scrollreveal'
 
 import player from '../../assets/player.png'
+import { useReveal } from '../../hooks/useReveal'
 
 export const About = () => {
-  const playerRef = useRef<HTMLImageElement>(null)
-  const aboutParagraphRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    if (!playerRef.current) return
-    ScrollReveal().reveal(playerRef.current, {
-      origin: 'left',
-      duration: 1000,
-      delay: 150,
-      distance: '300px',
-      opacity: 0,
-      easing: 'ease',
-    })
-  }, [playerRef])
-
-  useEffect(() => {
-    if (!aboutParagraphRef.current) return
-    ScrollReveal().reveal(aboutParagraphRef.current, {
-      origin: 'top',
-      duration: 1000,
-      delay: 150,
-      distance: '300px',
-      opacity: 0,
-      easing: 'ease',
-    })
-  }, [aboutParagraphRef])
+  const [playerRef] = useReveal<HTMLImageElement>({
+    origin: 'left',
+    duration: 1000,
+    delay: 150,
+    distance: '300px',
+    opacity: 0,
+    easing: 'ease',
+  })
+  const [aboutParagraphRef] = useReveal<HTMLDivElement>({
+    origin: 'top',
+    duration: 1000,
+    delay: 150,
+    distance: '300px',
+    opacity: 0,
+    easing: 'ease',
+  })
 
   return (
     <div id='About'>
