@@ -44,7 +44,7 @@ export const Contact = () => {
               </li>
               <li>
                 <Button
-                  href='https://www.facebook.com/MrMatchesExMark/Q'
+                  href='https://www.facebook.com/MrMatchesExMark'
                   icon='fa-facebook'
                   text='火柴人Ex改'
                 />
