@@ -65,7 +65,7 @@ export const Nav = () => {
             </Scrollchor>
           </li>
           <li>
-            <a href='https://map.thearkose.com'>Online Map</a>
+            <Link to='/map'>Online Map</Link>
           </li>
         </MobileMenu>
       </div>
