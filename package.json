@@ -26,6 +26,6 @@
     "precompress": "7.0.1",
     "prettier": "2.7.1",
     "typescript": "4.7.4",
-    "vite": "3.0.2"
+    "vite": "3.0.3"
   }
 }
