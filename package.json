@@ -18,7 +18,7 @@
     "styled-components": "5.3.10"
   },
   "devDependencies": {
-    "@types/react": "18.2.5",
+    "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
     "@types/scrollreveal": "0.0.8",
     "@types/styled-components": "5.1.26",
