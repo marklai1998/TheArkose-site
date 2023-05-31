@@ -6,7 +6,7 @@ import processor from '../../assets/processor.svg'
 import ram from '../../assets/ram.svg'
 import { Section } from '../../components/Section'
 import { Title } from '../../components/Title'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 import { useReveal } from '../../hooks/useReveal'
 
 export const Server = () => {

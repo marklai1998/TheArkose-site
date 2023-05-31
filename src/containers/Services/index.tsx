@@ -3,7 +3,7 @@ import React, { useMemo, useState } from 'react'
 import { allServices, servicesType } from './servicesMap'
 import { Section } from '../../components/Section'
 import { Title } from '../../components/Title'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 import { useReveal } from '../../hooks/useReveal'
 
 export const Services = () => {

@@ -3,7 +3,7 @@ import { Nav } from './Nav'
 import { Logo } from './Logo'
 import background from '../../assets/main.png'
 import { useWindowScroll } from 'react-use'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
 export const Header = () => {
   const headerRef = useRef<HTMLHeadingElement>(null)

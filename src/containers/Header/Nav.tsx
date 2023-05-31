@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 import { Scrollchor } from 'react-scrollchor'
 import { Link } from 'react-router-dom'
 

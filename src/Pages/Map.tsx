@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 import { Empty } from '../components/Empty'
 import { MapHeader } from '../containers/MapHeader'
 import { MapSelector } from '../containers/MapSelector'

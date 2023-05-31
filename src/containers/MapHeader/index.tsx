@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../../assets/mapLogo.svg'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 import { Link } from 'react-router-dom'
 
 export const MapHeader = () => (

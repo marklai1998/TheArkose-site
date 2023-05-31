@@ -1,6 +1,6 @@
 import React from 'react'
 
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
 type Props = {
   changeMap: (id: string) => void

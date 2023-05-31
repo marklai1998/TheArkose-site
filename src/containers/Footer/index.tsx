@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 import reactLogo from '../../assets/react.svg'
 
 export const Footer = () => (

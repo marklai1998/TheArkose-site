@@ -5,7 +5,7 @@ import chest from '../../assets/chest.png'
 import { Section } from '../../components/Section'
 import { Title } from '../../components/Title'
 import { Button } from '../../components/Button'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 import { useReveal } from '../../hooks/useReveal'
 
 const config = {
