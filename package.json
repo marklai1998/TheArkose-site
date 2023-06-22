@@ -1,7 +1,9 @@
 {
   "name": "the-arkose-site",
   "version": "1.0.0",
-  "private": true,
+  "engines": {
+    "node": "^18"
+  },
   "scripts": {
     "start": "vite",
     "build": "vite build",
@@ -9,7 +11,7 @@
     "test": "tsc"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.0",
+    "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "react-dom": "18.2.0",
     "react-router": "6.13.0",
@@ -25,7 +27,7 @@
     "@vitejs/plugin-react": "4.0.1",
     "precompress": "11.2.1",
     "prettier": "2.8.8",
-    "typescript": "4.9.5",
+    "typescript": "5.1.3",
     "vite": "4.3.9"
   }
 }
