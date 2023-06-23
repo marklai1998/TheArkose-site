@@ -1,9 +1,10 @@
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { Nav } from './Nav'
-import { Logo } from './Logo'
-import background from '../../assets/main.png'
-import { useWindowScroll } from 'react-use'
 import styled from '@emotion/styled'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { useWindowScroll } from 'react-use'
+
+import background from '../../assets/main.png'
+import { Logo } from './Logo'
+import { Nav } from './Nav'
 
 export const Header = () => {
   const headerRef = useRef<HTMLHeadingElement>(null)
@@ -36,9 +37,9 @@ export const Header = () => {
   )
 
   return (
-    <Wrapper id='header' ref={headerRef} scrollHeight={scrollHeight}>
+    <Wrapper id="header" ref={headerRef} scrollHeight={scrollHeight}>
       <Overlay scrollHeight={scrollHeight} opacity={opacity}>
-        <LogoWrapper className='container'>
+        <LogoWrapper className="container">
           <Logo small={smallLogo} />
         </LogoWrapper>
         <Nav />

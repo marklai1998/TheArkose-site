@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import ScrollReveal from 'scrollreveal'
+import scrollReveal from 'scrollreveal'
 
 export const useReveal = <T extends HTMLElement>(
   config: scrollReveal.ScrollRevealObjectOptions
@@ -8,8 +8,8 @@ export const useReveal = <T extends HTMLElement>(
 
   useEffect(() => {
     if (!ref.current) return
-    ScrollReveal().reveal(ref.current, config)
-  }, [ref])
+    scrollReveal().reveal(ref.current, config)
+  }, [config, ref])
 
   return [ref]
 }

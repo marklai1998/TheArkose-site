@@ -1,5 +1,5 @@
-import * as React from 'react'
 import styled from '@emotion/styled'
+import * as React from 'react'
 
 type Props = {
   children: React.ReactNode
@@ -14,11 +14,11 @@ export const Section = ({ backgroundImg, children, ...rest }: Props) =>
       }}
       {...rest}
     >
-      <div className='container'>{children}</div>
+      <div className="container">{children}</div>
     </Wrapper>
   ) : (
     <Wrapper {...rest}>
-      <div className='container'>{children}</div>
+      <div className="container">{children}</div>
     </Wrapper>
   )
 

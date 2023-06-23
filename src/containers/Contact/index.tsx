@@ -1,11 +1,10 @@
-import React from 'react'
+import styled from '@emotion/styled'
 
-import background from '../../assets/contactBackground.png'
 import chest from '../../assets/chest.png'
+import background from '../../assets/contactBackground.png'
+import { Button } from '../../components/Button'
 import { Section } from '../../components/Section'
 import { Title } from '../../components/Title'
-import { Button } from '../../components/Button'
-import styled from '@emotion/styled'
 import { useReveal } from '../../hooks/useReveal'
 
 const config = {
@@ -23,10 +22,10 @@ export const Contact = () => {
   const [chestRef] = useReveal<HTMLImageElement>(config)
 
   return (
-    <div id='Contact'>
+    <div id="Contact">
       <Wrapper backgroundImg={background}>
-        <div className='row justify-content-around'>
-          <div className='col-10 col-sm-12 col-md-8 col-lg-6 col-xl-5'>
+        <div className="row justify-content-around">
+          <div className="col-10 col-sm-12 col-md-8 col-lg-6 col-xl-5">
             <Title>Contact Us</Title>
             <br />
             <b ref={contactParagraphRef}>
@@ -37,22 +36,22 @@ export const Contact = () => {
             <ContactList ref={contactListRef}>
               <li>
                 <Button
-                  href='https://discord.gg/qcTv6nQ'
-                  icon='fa-discord'
-                  text='The Arkose Network'
+                  href="https://discord.gg/qcTv6nQ"
+                  icon="fa-discord"
+                  text="The Arkose Network"
                 />
               </li>
               <li>
                 <Button
-                  href='https://www.facebook.com/MrMatchesExMark'
-                  icon='fa-facebook'
-                  text='火柴人Ex改'
+                  href="https://www.facebook.com/MrMatchesExMark"
+                  icon="fa-facebook"
+                  text="火柴人Ex改"
                 />
               </li>
             </ContactList>
           </div>
-          <div className='col-8 col-md-4'>
-            <Chest src={chest} alt='chest' ref={chestRef} />
+          <div className="col-8 col-md-4">
+            <Chest src={chest} alt="chest" ref={chestRef} />
           </div>
         </div>
       </Wrapper>

@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
 import styled from '@emotion/styled'
+import { useState } from 'react'
+
 import { Empty } from '../components/Empty'
 import { MapHeader } from '../containers/MapHeader'
 import { MapSelector } from '../containers/MapSelector'

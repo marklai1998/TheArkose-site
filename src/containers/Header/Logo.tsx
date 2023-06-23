@@ -1,5 +1,5 @@
-import React from 'react'
 import styled from '@emotion/styled'
+
 import logoImg from '../../assets/logo.svg'
 
 type Props = {
@@ -8,7 +8,7 @@ type Props = {
 
 export const Logo = ({ small }: Props) => (
   <Wrapper small={small}>
-    <Icon small={small} src={logoImg} alt='logo' />
+    <Icon small={small} src={logoImg} alt="logo" />
     <Name small={small}>
       <div>The Arkose</div>
       <div>Network</div>

@@ -1,19 +1,19 @@
-import React from 'react'
-import logo from '../../assets/mapLogo.svg'
 import styled from '@emotion/styled'
 import { Link } from 'react-router-dom'
 
+import logo from '../../assets/mapLogo.svg'
+
 export const MapHeader = () => (
   <Wrapper>
-    <div className='container'>
+    <div className="container">
       <LogoWrapper>
-        <Logo src={logo} alt='logo' />
+        <Logo src={logo} alt="logo" />
         <Name>
           <div>The Arkose</div>
           <div>Online Map</div>
         </Name>
       </LogoWrapper>
-      <BackBtn to='/'>Official Website</BackBtn>
+      <BackBtn to="/">Official Website</BackBtn>
     </div>
   </Wrapper>
 )

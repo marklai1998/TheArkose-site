@@ -1,71 +1,71 @@
-import React, { useState } from 'react'
 import styled from '@emotion/styled'
-import { Scrollchor } from 'react-scrollchor'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { Scrollchor } from 'react-scrollchor'
 
 export const Nav = () => {
   const [showMobileNav, setShowMobileNav] = useState(false)
 
   const toggleMobileNav = () => {
-    setShowMobileNav((prev) => !prev)
+    setShowMobileNav(prev => !prev)
   }
 
   return (
     <>
-      <div className='container'>
-        <div className='d-none d-sm-none d-md-block'>
-          <Menu className='nav'>
+      <div className="container">
+        <div className="d-none d-sm-none d-md-block">
+          <Menu className="nav">
             <li>
-              <Scrollchor to='#About' animate={{ offset: -100 }}>
+              <Scrollchor to="#About" animate={{ offset: -100 }}>
                 About Us
               </Scrollchor>
             </li>
             <li>
-              <Scrollchor to='#Server' animate={{ offset: -100 }}>
+              <Scrollchor to="#Server" animate={{ offset: -100 }}>
                 Server
               </Scrollchor>
             </li>
             <li>
-              <Scrollchor to='#Services' animate={{ offset: -100 }}>
+              <Scrollchor to="#Services" animate={{ offset: -100 }}>
                 Services
               </Scrollchor>
             </li>
             <li>
-              <Scrollchor to='#Contact' animate={{ offset: -100 }}>
+              <Scrollchor to="#Contact" animate={{ offset: -100 }}>
                 Contact Us
               </Scrollchor>
             </li>
             <li>
-              <Link to='/map'>Online Map</Link>
+              <Link to="/map">Online Map</Link>
             </li>
           </Menu>
         </div>
       </div>
-      <div className='d-block d-sm-block d-md-none'>
-        <MenuIcon className='fas fa-bars' onClick={toggleMobileNav} />
+      <div className="d-block d-sm-block d-md-none">
+        <MenuIcon className="fas fa-bars" onClick={toggleMobileNav} />
         <MobileMenu visible={showMobileNav}>
           <li>
-            <Scrollchor to='#About' animate={{ offset: -100 }}>
+            <Scrollchor to="#About" animate={{ offset: -100 }}>
               About Us
             </Scrollchor>
           </li>
           <li>
-            <Scrollchor to='#Server' animate={{ offset: -100 }}>
+            <Scrollchor to="#Server" animate={{ offset: -100 }}>
               Server
             </Scrollchor>
           </li>
           <li>
-            <Scrollchor to='#Services' animate={{ offset: -100 }}>
+            <Scrollchor to="#Services" animate={{ offset: -100 }}>
               Services
             </Scrollchor>
           </li>
           <li>
-            <Scrollchor to='#Contact' animate={{ offset: -100 }}>
+            <Scrollchor to="#Contact" animate={{ offset: -100 }}>
               Contact Us
             </Scrollchor>
           </li>
           <li>
-            <Link to='/map'>Online Map</Link>
+            <Link to="/map">Online Map</Link>
           </li>
         </MobileMenu>
       </div>

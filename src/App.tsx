@@ -1,6 +1,6 @@
-import React from 'react'
-import { Router } from './Router'
 import { Global, css } from '@emotion/react'
+
+import { Router } from './Router'
 
 export const App = () => (
   <>

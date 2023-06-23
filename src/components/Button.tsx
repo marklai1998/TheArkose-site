@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from '@emotion/styled'
 
 type Props = {
@@ -9,7 +8,7 @@ type Props = {
 
 export const Button = ({ icon, text, ...rest }: Props) => (
   <Wrapper {...rest}>
-    {icon && <i className={'fab ' + icon} />}
+    {icon && <i className={`fab ${icon}`} />}
     {text}
   </Wrapper>
 )

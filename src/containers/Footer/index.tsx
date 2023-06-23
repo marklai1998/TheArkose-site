@@ -1,14 +1,14 @@
-import React from 'react'
 import styled from '@emotion/styled'
+
 import reactLogo from '../../assets/react.svg'
 
 export const Footer = () => (
   <Wrapper>
-    <div className='container'>
+    <div className="container">
       Built by Mr.Matches. All right reserved
       <br />
       Built with react.js
-      <img src={reactLogo} alt='react' />
+      <img src={reactLogo} alt="react" />
     </div>
   </Wrapper>
 )

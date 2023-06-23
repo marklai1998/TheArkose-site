@@ -1,11 +1,9 @@
-import React from 'react'
-
 import styled from '@emotion/styled'
 
 export const Empty = () => (
   <MessageWrapper>
     <Message>
-      <i className='fas fa-arrow-left' /> 請選擇地圖
+      <i className="fas fa-arrow-left" /> 請選擇地圖
     </Message>
   </MessageWrapper>
 )

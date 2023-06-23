@@ -1,5 +1,3 @@
-import React from 'react'
-
 import styled from '@emotion/styled'
 
 type Props = {
@@ -25,10 +23,10 @@ export const Item = ({
       {hasDownload && (
         <Download
           href={`https://archive.thearkose.com/${mapId}.zip`}
-          target='_blank'
-          rel='noopener noreferrer'
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <i className='far fa-file-archive' />
+          <i className="far fa-file-archive" />
         </Download>
       )}
     </Wrapper>
