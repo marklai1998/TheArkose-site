@@ -1,14 +1,23 @@
 {
-  "name": "the-arkose-site",
+  "name": "the-arkose-web",
   "version": "1.0.0",
+  "repository": "https://github.com/the-arkose/the-arkose-web.git",
+  "author": "marklai1998 <marklai1998@gmail.com>",
+  "license": "MIT",
+  "type": "module",
   "engines": {
     "node": "^18"
   },
   "scripts": {
-    "start": "vite",
+    "dev": "vite",
     "build": "vite build",
-    "postbuild": "precompress dist",
-    "test": "tsc"
+    "postinstall": "husky install",
+    "preview": "vite preview",
+    "test": "tsc",
+    "lint:js": "eslint src",
+    "pre-commit": "pnpm lint-staged",
+    "pre-push": "tsc",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@emotion/react": "11.11.1",
@@ -22,10 +31,25 @@
     "scrollreveal": "4.0.9"
   },
   "devDependencies": {
+    "@commitlint/cli": "17.6.5",
+    "@commitlint/config-conventional": "17.6.5",
+    "@spotify/eslint-config": "15.0.0",
     "@types/react": "18.2.13",
     "@types/react-dom": "18.2.6",
     "@types/scrollreveal": "0.0.8",
+    "@typescript-eslint/eslint-plugin": "5.60.0",
+    "@typescript-eslint/parser": "5.60.0",
     "@vitejs/plugin-react": "4.0.1",
+    "eslint": "8.43.0",
+    "eslint-plugin-fp": "2.3.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-prettier": "4.2.1",
+    "husky": "8.0.3",
+    "import-sort-cli": "6.0.0",
+    "import-sort-parser-babylon": "6.0.0",
+    "import-sort-parser-typescript": "6.0.0",
+    "import-sort-style-module": "6.0.0",
+    "lint-staged": "13.2.2",
     "precompress": "11.2.1",
     "prettier": "2.8.8",
     "typescript": "5.1.3",
