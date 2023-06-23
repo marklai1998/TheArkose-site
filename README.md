@@ -11,11 +11,11 @@ Source code for the official TheArkose Network site
 
 2. Install dependency
 ```
-$ npm install
+$ pnpm install
 ```
 3. Start the project
 ```
-$ npm start
+$ pnpm start
 ```
 
 ## Tools
