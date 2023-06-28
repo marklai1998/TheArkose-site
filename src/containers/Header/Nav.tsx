@@ -1,6 +1,5 @@
 import styled from '@emotion/styled'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { Scrollchor } from 'react-scrollchor'
 
 export const Nav = () => {
@@ -36,7 +35,7 @@ export const Nav = () => {
               </Scrollchor>
             </li>
             <li>
-              <Link to="/map">Online Map</Link>
+              <a href="https://map.TheArkose.com">Online Map</a>
             </li>
           </Menu>
         </div>
@@ -65,7 +64,7 @@ export const Nav = () => {
             </Scrollchor>
           </li>
           <li>
-            <Link to="/map">Online Map</Link>
+            <a href="https://map.TheArkose.com">Online Map</a>
           </li>
         </MobileMenu>
       </div>
