@@ -47,7 +47,7 @@
     "import-sort-parser-babylon": "6.0.0",
     "import-sort-parser-typescript": "6.0.0",
     "import-sort-style-module": "6.0.0",
-    "lint-staged": "13.2.2",
+    "lint-staged": "13.2.3",
     "precompress": "11.2.1",
     "prettier": "2.8.8",
     "typescript": "5.1.5",
