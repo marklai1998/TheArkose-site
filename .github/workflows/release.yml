@@ -20,10 +20,19 @@ jobs:
         name: Install pnpm
         with:
           version: 8
+      - uses: google-github-actions/release-please-action@v3
+        id: release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          release-type: node
       - run: pnpm install --frozen-lockfile
+        if: ${{ steps.release.outputs.release_created }}
       - run: pnpm build
+        if: ${{ steps.release.outputs.release_created }}
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
+        if: ${{ steps.release.outputs.release_created }}
         with:
           branch: gh-pages
           folder: dist
