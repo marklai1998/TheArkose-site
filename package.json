@@ -29,7 +29,7 @@
     "scrollreveal": "4.0.9"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.7.0",
+    "@commitlint/cli": "17.7.1",
     "@commitlint/config-conventional": "17.7.0",
     "@spotify/eslint-config": "15.0.0",
     "@types/react": "18.2.20",
