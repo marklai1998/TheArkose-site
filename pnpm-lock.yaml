@@ -44,8 +44,8 @@ devDependencies:
     specifier: 18.2.13
     version: 18.2.13
   '@types/scrollreveal':
-    specifier: 0.0.9
-    version: 0.0.9
+    specifier: 0.0.10
+    version: 0.0.10
   '@typescript-eslint/eslint-plugin':
     specifier: 6.8.0
     version: 6.8.0(@typescript-eslint/parser@6.8.0)(eslint@8.51.0)(typescript@5.2.2)
@@ -1354,8 +1354,8 @@ packages:
   /@types/scheduler@0.16.3:
     resolution: {integrity: sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==}
 
-  /@types/scrollreveal@0.0.9:
-    resolution: {integrity: sha512-xOgfSRmwSjutMmKqz36J8vp33ekcYI6iTQz3z/EuiYXsHy7YnsDM1Eo2w5iswyJQgL6o+a/dBg4mQVAMniDM+w==}
+  /@types/scrollreveal@0.0.10:
+    resolution: {integrity: sha512-MHZ2uJzWjFyRpwXrpzPETy5WJrj9d9jN5Fli451g62WzreAhE39CEG8BCry3BTsiz9bA8S11SXz4kACfz7efOA==}
     dev: true
 
   /@types/semver@7.5.0:
