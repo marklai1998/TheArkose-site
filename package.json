@@ -32,7 +32,7 @@
     "@commitlint/config-conventional": "19.1.0",
     "@spotify/eslint-config": "15.0.0",
     "@types/react": "18.2.65",
-    "@types/react-dom": "18.2.21",
+    "@types/react-dom": "18.2.22",
     "@types/scrollreveal": "0.0.11",
     "@typescript-eslint/eslint-plugin": "7.2.0",
     "@typescript-eslint/parser": "7.2.0",
