@@ -1,5 +1,27 @@
 # Changelog
 
+## 1.0.1 (2024-12-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @emotion/react to v11.11.3 ([7c33173](https://github.com/The-Arkose/the-arkose-web/commit/7c33173d99bbe5bae17b72513d971a419eb58236))
+* **deps:** update dependency @emotion/react to v11.11.4 ([1d53296](https://github.com/The-Arkose/the-arkose-web/commit/1d532968232fb736cff87fad77b869a2c85ff691))
+* **deps:** update dependency @emotion/react to v11.13.3 ([91566b4](https://github.com/The-Arkose/the-arkose-web/commit/91566b41c093cfff30e90b7ce4480573708aea10))
+* **deps:** update dependency @emotion/styled to v11.11.5 ([575d697](https://github.com/The-Arkose/the-arkose-web/commit/575d697d49db93370911c4a4e3beacd0ae1ce88e))
+* **deps:** update dependency react-use to v17.4.1 ([15bc6d8](https://github.com/The-Arkose/the-arkose-web/commit/15bc6d82f8e76b1fb46d9c44d39791cc0245a5cf))
+* **deps:** update dependency react-use to v17.4.2 ([c8ac5f2](https://github.com/The-Arkose/the-arkose-web/commit/c8ac5f2ba41a88d79ad38e57e76b7fee4f031f2a))
+* **deps:** update dependency react-use to v17.4.3 ([6eeef37](https://github.com/The-Arkose/the-arkose-web/commit/6eeef37708839b36ff5e31ac8dba376d7bb840db))
+* **deps:** update dependency react-use to v17.4.4 ([4d7b079](https://github.com/The-Arkose/the-arkose-web/commit/4d7b0795c07e02a3d5f9700cb091826f2a67613b))
+* **deps:** update dependency react-use to v17.5.0 ([2ea7257](https://github.com/The-Arkose/the-arkose-web/commit/2ea7257fc74131f5a642007b4556f7c16a0db239))
+* **deps:** update dependency react-use to v17.5.1 ([11018c6](https://github.com/The-Arkose/the-arkose-web/commit/11018c61c80cfa33fcdd6b34c140b30d632e61a3))
+* **deps:** update dependency react-use to v17.6.0 ([#639](https://github.com/The-Arkose/the-arkose-web/issues/639)) ([57c4641](https://github.com/The-Arkose/the-arkose-web/commit/57c46416ffed45a8f7ca6dd57808d764718de835))
+* **deps:** update emotion monorepo to v11.12.0 ([5859264](https://github.com/The-Arkose/the-arkose-web/commit/58592640b807b4ef7391969d7bda85653b4cb97a))
+* **deps:** update emotion monorepo to v11.13.0 ([9146fd5](https://github.com/The-Arkose/the-arkose-web/commit/9146fd518b89b107bd8db3c024c3325bfa3d73c0))
+* **deps:** update emotion monorepo to v11.13.5 ([#623](https://github.com/The-Arkose/the-arkose-web/issues/623)) ([4472333](https://github.com/The-Arkose/the-arkose-web/commit/447233334478af6135254fa2edf5686476af919a))
+* **deps:** update emotion monorepo to v11.14.0 ([#636](https://github.com/The-Arkose/the-arkose-web/issues/636)) ([dbd64e4](https://github.com/The-Arkose/the-arkose-web/commit/dbd64e42b9402b2c2a35699a489fe3fe540d4584))
+* **deps:** update react monorepo to v18.3.1 ([ca9af04](https://github.com/The-Arkose/the-arkose-web/commit/ca9af0433033f03b89970a8acf2607d0ecc7c970))
+
 ## 1.0.0 (2023-06-28)
 
 
