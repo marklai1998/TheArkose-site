@@ -20,12 +20,14 @@ jobs:
         name: Install pnpm
         with:
           version: 8
-      - uses: google-github-actions/release-please-action@v4
+      - uses: google-github-actions/release-please-action@v3
         id: release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           release-type: node
+          release-as: 1.0.1
+          last-release-sha: b981c9de2ea5755c8c7b583e44a46192fb8b7eec
       - run: pnpm install --frozen-lockfile
         if: ${{ steps.release.outputs.release_created }}
       - run: pnpm build
